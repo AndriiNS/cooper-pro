@@ -5,6 +5,10 @@
   margin: 0 auto;
   position: relative;
   overflow: hidden;
+
+  @media (max-width: 768px) {
+    min-height: 1024px;
+  }
 }
 .swiper-header .swiper-pagination-bullet {
   background-color: #fff !important;
@@ -15,7 +19,8 @@
 
   &__top {
     display: flex;
-    @media (max-width: 1300px) {
+    @media (max-width: 768px) {
+      flex-wrap: wrap;
     }
   }
 
@@ -27,6 +32,10 @@
     padding-left: 403px;
     @media (max-width: 1300px) {
       padding-left: 100px;
+    }
+    @media (max-width: 768px) {
+      flex-wrap: wrap;
+      padding-left: 200px;
     }
   }
 
@@ -67,7 +76,8 @@
   padding-left: 77px;
   padding-top: 68px;
   z-index: 20;
-  @media (max-width: 1300px) {
+  @media (max-width: 768px) {
+    order: 1;
   }
 
   &__list {
@@ -105,13 +115,19 @@
 }
 .header-wood {
   position: absolute;
-  right: 0;
+  right: 0px;
   border-radius: 70% 0% 0 0%;
   width: 900px;
   height: 100%;
   @media (max-width: 1300px) {
-    border-radius: 70% 0% 0 10%;
+    border-radius: 70% 0% 0 70%;
+    height: 900px;
+    width: 600px;
+  }
+  @media (max-width: 768px) {
+    top: 200px;
     right: -400px;
+    height: 900px;
   }
 }
 .header-wood__text {
@@ -289,15 +305,36 @@
 .img-back-header {
   position: absolute;
   right: 100px;
+  @media (max-width: 1300px) {
+    bottom: -400px;
+  }
+  @media (max-width: 768px) {
+    right: -50px;
+    bottom: -400px;
+  }
 }
 .img-item-header {
   position: absolute;
   right: 280px;
-  bottom: -160px;
+  bottom: -70px;
   z-index: 10;
+  @media (max-width: 1300px) {
+    bottom: -170px;
+  }
+  @media (max-width: 768px) {
+    right: 100px;
+    bottom: -200px;
+  }
 }
 .img-place-header {
   position: absolute;
   right: 250px;
-  bottom: -260px;
+  bottom: -170px;
+  @media (max-width: 1300px) {
+    bottom: -270px;
+  }
+  @media (max-width: 768px) {
+    right: 100px;
+    bottom: -300px;
+  }
 }

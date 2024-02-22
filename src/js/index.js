@@ -10,10 +10,10 @@ import "swiper/css/bundle";
 //swiper best sales
 const swiper = new Swiper(".swiper", {
   // Optional parameters
-  slidesPerView: 3,
+
   spaceBetween: 30,
   loop: true,
-  slidesPerGroup: 3,
+
   speed: 1600,
   // If we need pagination
   pagination: {
@@ -25,6 +25,16 @@ const swiper = new Swiper(".swiper", {
     nextEl: ".swiper-arrow-next",
     prevEl: ".swiper-arrow-prev"
   },
+  breakpoints: {
+    1240: {
+      slidesPerView: 3,
+      slidesPerGroup: 3
+    },
+    445: {
+      slidesPerView: 2,
+      slidesPerGroup: 2
+    }
+  },
 
   // And if we need scrollbar
   scrollbar: {
@@ -34,9 +44,8 @@ const swiper = new Swiper(".swiper", {
 //========================================================================================================================================================
 //swiper Newest
 const swiperNewest = new Swiper(".swiper-newest", {
-  slidesPerView: 3,
   spaceBetween: 30,
-  slidesPerGroup: 3,
+
   loop: true,
   speed: 1600,
   pagination: {
@@ -46,16 +55,16 @@ const swiperNewest = new Swiper(".swiper-newest", {
     nextEl: ".swiperNewest-arrow-next",
     prevEl: ".swiperNewest-arrow-prev"
   },
-  // breakpoints: {
-  //   1240: {
-  //     slidesPerView: 3,
-  //     slidesPerGroup: 3
-  //   },
-  //   445: {
-  //     slidesPerView: 2,
-  //     slidesPerGroup: 2
-  //   }
-  // },
+  breakpoints: {
+    1240: {
+      slidesPerView: 3,
+      slidesPerGroup: 3
+    },
+    445: {
+      slidesPerView: 2,
+      slidesPerGroup: 2
+    }
+  },
   scrollbar: {
     el: ".swiper-scrollbar"
   }
@@ -63,10 +72,9 @@ const swiperNewest = new Swiper(".swiper-newest", {
 //========================================================================================================================================================
 //swiper recommednded
 const swiperRecommended = new Swiper(".swiper-recomended", {
-  slidesPerView: 3,
   spaceBetween: 30,
   loop: true,
-  slidesPerGroup: 3,
+
   speed: 1600,
   pagination: {
     el: ".swiper-pagination"
@@ -75,16 +83,16 @@ const swiperRecommended = new Swiper(".swiper-recomended", {
     nextEl: ".swiperRecomended-arrow-next",
     prevEl: ".swiperRecomended-arrow-prev"
   },
-  // breakpoints: {
-  //   1240: {
-  //     slidesPerView: 3,
-  //     slidesPerGroup: 3
-  //   },
-  //   445: {
-  //     slidesPerView: 2,
-  //     slidesPerGroup: 2
-  //   }
-  // },
+  breakpoints: {
+    1240: {
+      slidesPerView: 3,
+      slidesPerGroup: 3
+    },
+    445: {
+      slidesPerView: 2,
+      slidesPerGroup: 2
+    }
+  },
   scrollbar: {
     el: ".swiper-scrollbar"
   }
@@ -92,9 +100,8 @@ const swiperRecommended = new Swiper(".swiper-recomended", {
 //========================================================================================================================================================
 //slider discount
 const swiperDiscount = new Swiper(".swiper-discount", {
-  slidesPerView: 3,
   spaceBetween: 30,
-  slidesPerGroup: 3,
+
   speed: 1600,
   loop: true,
   pagination: {
@@ -104,16 +111,16 @@ const swiperDiscount = new Swiper(".swiper-discount", {
     nextEl: ".swiperDiscount-arrow-next",
     prevEl: ".swiperDiscount-arrow-prev"
   },
-  // breakpoints: {
-  //   1240: {
-  //     slidesPerView: 3,
-  //     slidesPerGroup: 3
-  //   },
-  //   445: {
-  //     slidesPerView: 2,
-  //     slidesPerGroup: 2
-  //   }
-  // },
+  breakpoints: {
+    1240: {
+      slidesPerView: 3,
+      slidesPerGroup: 3
+    },
+    445: {
+      slidesPerView: 2,
+      slidesPerGroup: 2
+    }
+  },
   scrollbar: {
     el: ".swiper-scrollbar"
   }
@@ -121,9 +128,8 @@ const swiperDiscount = new Swiper(".swiper-discount", {
 //========================================================================================================================================================
 //slider opinion
 const swiperOpinion = new Swiper(".swiper-opinion", {
-  slidesPerView: 3,
   spaceBetween: 30,
-  slidesPerGroup: 3,
+
   loop: true,
   speed: 1600,
   pagination: {
@@ -133,16 +139,17 @@ const swiperOpinion = new Swiper(".swiper-opinion", {
     nextEl: ".swiperOpinion-arrow-next",
     prevEl: ".swiperOpinion-arrow-prev"
   },
-  // breakpoints: {
-  //   1240: {
-  //     slidesPerView: 3,
-  //     slidesPerGroup: 3
-  //   },
-  //   445: {
-  //     slidesPerView: 2,
-  //     slidesPerGroup: 2
-  //   }
-  // },
+  breakpoints: {
+    1240: {
+      slidesPerView: 3,
+      slidesPerGroup: 3
+    },
+    445: {
+      slidesPerView: 2,
+      slidesPerGroup: 2,
+      spaceBetween: 20
+    }
+  },
   scrollbar: {
     el: ".swiper-scrollbar"
   }

@@ -97,6 +97,9 @@ a {
       width: 140px;
       height: 115px;
     }
+    @media (max-width: 768px) {
+      margin: 20px 10px;
+    }
   }
 
   // .opinion__item-img
@@ -141,6 +144,9 @@ a {
   padding-bottom: 75px;
   @media (max-width: 1300px) {
     padding: 75px 30px;
+  }
+  @media (max-width: 768px) {
+    grid-template-columns: repeat(2, 1fr);
   }
 }
 .peeck-item {
