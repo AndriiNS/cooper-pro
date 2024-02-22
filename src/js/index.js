@@ -157,7 +157,7 @@ const swiperOpinion = new Swiper(".swiper-opinion", {
 //========================================================================================================================================================
 const swiperHeader = new Swiper(".swiper-header", {
   slidesPerView: 1,
-  spaceBetween: 100,
+  spaceBetween: 300,
   speed: 1600,
   loop: true,
   pagination: {
