@@ -1,0 +1,18 @@
+<svg width="30.000000" height="30.000000" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+	<desc>
+			Created with Pixso.
+	</desc>
+	<defs>
+		<clipPath id="clip23_362">
+			<rect id="heart (5) 1" width="30.000000" height="30.000000" fill="white" fill-opacity="0"/>
+		</clipPath>
+		<linearGradient id="paint_linear_35_404_0" x1="7.572987" y1="-4.392670" x2="28.499975" y2="27.454956" gradientUnits="userSpaceOnUse">
+			<stop stop-color="#5E3928"/>
+			<stop offset="0.911458" stop-color="#E4A16F"/>
+		</linearGradient>
+	</defs>
+	<rect id="heart (5) 1" width="30.000000" height="30.000000" fill="#FFFFFF" fill-opacity="0"/>
+	<g clip-path="url(#clip23_362)">
+		<path id="Union" d="M21.8749 2.39624C20.4674 2.41821 19.0905 2.81104 17.8834 3.5354C16.6763 4.25952 15.6816 5.28955 14.9999 6.52124C14.3182 5.28955 13.3236 4.25952 12.1165 3.5354C10.9094 2.81104 9.5325 2.41821 8.12494 2.39624C5.88113 2.49365 3.76709 3.47534 2.24469 5.12646C0.72226 6.77783 -0.0847473 8.96436 -6.10352e-05 11.2087C-6.10352e-05 16.8926 5.98245 23.1001 10.9999 27.3088C12.1202 28.2502 13.5367 28.7664 14.9999 28.7664C16.4633 28.7664 17.8797 28.2502 18.9999 27.3088C24.0175 23.1001 29.9999 16.8926 29.9999 11.2087C30.0846 8.96436 29.2776 6.77783 27.7552 5.12646C26.2328 3.47534 24.1188 2.49365 21.8749 2.39624Z" clip-rule="evenodd" fill="url(#paint_linear_35_404_0)" fill-opacity="1.000000" fill-rule="evenodd"/>
+	</g>
+</svg>

@@ -1,0 +1,77 @@
+.new {
+  position: relative;
+  max-width: 1920px;
+  margin: 0 auto;
+}
+.swiper-newest {
+  width: 100%; /* або встановіть фіксовану ширину, яка підходить вашим потребам */
+  overflow: hidden;
+}
+.swiperNewest-arrow-prev {
+  position: absolute;
+  top: 50%;
+  cursor: url("./../img/cursor.png"), auto;
+  @media (max-width: 1440px) {
+    display: none;
+  }
+}
+.swiperNewest-arrow-next {
+  position: absolute;
+  top: 50%;
+  right: 0;
+  cursor: url("./../img/cursor.png"), auto;
+  @media (max-width: 1440px) {
+    display: none;
+  }
+}
+.swiperNewest-arrow-next:hover img {
+  content: url("../../img/swiper/arrow-right-active.svg");
+}
+.swiperNewest-arrow-prev:hover img {
+  content: url("../../img/swiper/arrow-right-active.svg");
+  rotate: 180deg;
+}
+.sale-discount {
+  position: absolute;
+  background-color: #9b0000;
+  display: flex;
+  justify-content: center;
+  top: 40px;
+}
+.sale-discount__text {
+  font-size: 20px;
+  font-weight: 900;
+  line-height: 19px;
+  color: #fff;
+  text-align: center;
+  padding: 9px 18px;
+}
+.best-sales__pricet.discount-red {
+  color: #9b0000;
+  position: relative;
+
+  &::before {
+    content: "1953 грн";
+    position: absolute;
+    top: 20px;
+    right: 0;
+    opacity: 0.7;
+    font-family: Mont;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 19px;
+    color: #031412;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 30px;
+    right: -10px;
+    width: 100px;
+    height: 1px;
+    background-color: #031412;
+    opacity: 0.7;
+    transform: translateY(-50%) rotate(13.8deg);
+  }
+}

@@ -1,0 +1,210 @@
+.best-sales {
+  max-width: 1920px;
+  margin: 0 auto;
+  background-color: rgba(11, 63, 55, 0.049);
+  position: relative;
+  margin-bottom: 80px;
+  overflow: hidden;
+
+  // .best-sales__title
+
+  &__title {
+    text-align: center;
+    padding-top: 80px;
+    padding-bottom: 46px;
+    font-family: var(--font-accent);
+    font-size: 50px;
+    font-weight: 400;
+    line-height: 37px;
+  }
+
+  // .best-sales__content
+
+  &__content {
+    display: flex;
+    gap: 20px;
+  }
+
+  // .best-sales__item
+
+  &__item {
+    position: relative;
+    padding: 20px 20px;
+
+    img {
+      width: 100%;
+      box-shadow: 0px 4px 20px 0px rgba(0, 0, 0, 0.15);
+    }
+    a {
+      &:hover {
+        height: 55px;
+        cursor: url("./../img/cursor.png"), auto;
+      }
+    }
+    @media (max-width: 1300px) {
+      width: 350px;
+      height: 450px;
+    }
+  }
+
+  // .best-sales__heart
+
+  &__heart {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    background-color: #fff;
+    width: 63px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.3s ease 0s;
+    &:hover .heart-icon {
+      background: url("../../img/products/active-heart.svg") no-repeat;
+    }
+    &:hover {
+      height: 55px;
+      cursor: url("./../img/cursor.png"), auto;
+    }
+  }
+
+  // .best-sales__info
+
+  &__info {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  // .best-sales__text
+
+  &__text {
+    padding-top: 35px;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 19px;
+    max-width: 257px;
+    @media (max-width: 1300px) {
+      font-weight: 500;
+      max-width: 160px;
+    }
+  }
+
+  // .best-sales__pricet
+
+  &__pricet {
+    padding-top: 47px;
+    font-size: 30px;
+    font-weight: 800;
+    line-height: 29px;
+    @media (max-width: 1240px) {
+      font-size: 25px;
+    }
+  }
+}
+.heart-icon {
+  background-image: url("../../img/products/black-heart.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 30px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease 0s;
+
+  &:hover {
+    background-image: ("../../");
+  }
+}
+//========================================================================================================================================================
+//swiper
+.swiper-pagination {
+  position: sticky !important;
+  margin-top: 45px;
+}
+.swiper-pagination-bullet {
+  width: 12px !important;
+  height: 12px !important;
+  background-color: #031412 !important;
+  opacity: 1 !important;
+  border-radius: 0 !important;
+}
+.swiper-pagination-bullet-active {
+  background: linear-gradient(65.81deg, #5e3928 -24.09%, #e4a16f 104.02%) !important;
+}
+.swiper-button-prev img,
+.swiper-button-next img {
+  /* Додайте стилі за необхідності */
+  width: 30px;
+  height: 30px;
+}
+.swiper-arrow-prev {
+  position: absolute;
+  top: 50%;
+  cursor: url("./../img/cursor.png"), auto;
+  @media (max-width: 1440px) {
+    display: none;
+  }
+}
+.swiper-arrow-next {
+  position: absolute;
+  top: 50%;
+  right: 0;
+  cursor: url("./../img/cursor.png"), auto;
+  @media (max-width: 1440px) {
+    display: none;
+  }
+}
+.swiper-arrow-next:hover img {
+  content: url("../../img/swiper/arrow-right-active.svg");
+}
+.swiper-arrow-prev:hover img {
+  content: url("../../img/swiper/arrow-right-active.svg");
+  rotate: 180deg;
+}
+.best-sale__button {
+  display: flex;
+  justify-content: center;
+  padding-top: 42px;
+  padding-bottom: 80px;
+}
+.best-sales__btn {
+  color: #fff;
+  font-size: 18px;
+  font-weight: 800;
+  background: linear-gradient(92.18deg, #5e3928 20.13%, #e4a16f 92.93%);
+  padding: 17px 78px;
+  transition: all 0.3s ease 0s;
+  z-index: 100;
+
+  &:hover {
+    opacity: 0.9;
+  }
+}
+//========================================================================================================================================================
+//elipse
+.Ellipse5 {
+  position: absolute;
+  opacity: 0.5;
+}
+.Ellipse7 {
+  position: absolute;
+  opacity: 0.5;
+}
+.Ellipse6 {
+  position: absolute;
+  opacity: 0.5;
+  right: 0;
+}
+.Ellipse3 {
+  position: absolute;
+  opacity: 0.5;
+  left: 47%;
+}
+.Ellipse4 {
+  position: absolute;
+  opacity: 0.5;
+  left: 20%;
+  bottom: 0;
+}

@@ -1,0 +1,219 @@
+.opinion,
+.peeck,
+.discount,
+.recommend {
+  max-width: 1920px;
+  margin: 0 auto;
+  position: relative;
+}
+.peeck,
+.discount {
+  background-color: rgba(11, 63, 55, 0.049);
+  overflow: hidden;
+}
+.swiper-opinion,
+.swiper-discount,
+.swiper-recomended {
+  width: 100%; /* або встановіть фіксовану ширину, яка підходить вашим потребам */
+  overflow: hidden;
+}
+.swiperHeader-arrow-prev,
+.swiperOpinion-arrow-prev,
+.swiperDiscount-arrow-prev,
+.swiperRecomended-arrow-prev {
+  position: absolute;
+  top: 50%;
+  cursor: url("./../img/cursor.png"), auto;
+  @media (max-width: 1440px) {
+    display: none;
+  }
+}
+.swiperHeader-arrow-next,
+.swiperOpinion-arrow-next,
+.swiperDiscount-arrow-next,
+.swiperRecomended-arrow-next {
+  position: absolute;
+  top: 50%;
+  right: 0;
+  cursor: url("./../img/cursor.png"), auto;
+  @media (max-width: 1440px) {
+    display: none;
+  }
+}
+.swiperHeader-arrow-next:hover img {
+  content: url("../../img/swiper/arrow-right-active.svg");
+}
+.swiperRecomended-arrow-next:hover img {
+  content: url("../../img/swiper/arrow-right-active.svg");
+}
+.swiperRecomended-arrow-prev:hover img {
+  content: url("../../img/swiper/arrow-right-active.svg");
+  rotate: 180deg;
+}
+.swiperDiscount-arrow-next:hover img {
+  content: url("../../img/swiper/arrow-right-active.svg");
+}
+.swiperDiscount-arrow-prev:hover img {
+  content: url("../../img/swiper/arrow-right-active.svg");
+  rotate: 180deg;
+}
+.swiperOpinion-arrow-next:hover img {
+  content: url("../../img/swiper/arrow-right-active.svg");
+}
+.swiperOpinion-arrow-prev:hover img {
+  content: url("../../img/swiper/arrow-right-active.svg");
+  rotate: 180deg;
+}
+.swiperHeader-arrow-prev:hover img {
+  content: url("../../img/swiper/arrow-right-active.svg");
+  rotate: 180deg;
+}
+a {
+  &:hover {
+    cursor: url("./../img/cursor.png"), auto;
+  }
+}
+//========================================================================================================================================================
+.opinion {
+  // .opinion__item
+  margin-bottom: 80px;
+
+  &__item {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+    margin: 40px 40px;
+    padding: 20px 30px;
+    box-shadow: 0px 0px 40px 0px rgba(0, 0, 0, 0.1);
+    position: relative;
+    &::after {
+      content: "";
+      position: absolute;
+      right: 0px;
+      top: 0;
+      background-image: url("../../img/Union.svg");
+      background-repeat: no-repeat;
+      background-size: cover;
+      width: 140px;
+      height: 115px;
+    }
+  }
+
+  // .opinion__item-img
+
+  &__item-img {
+    width: 63px;
+    height: 63px;
+  }
+
+  // .opinion__item-name
+
+  &__item-name {
+    font-size: 25px;
+    line-height: 24px;
+  }
+
+  // .opinion__item-text
+
+  &__item-text {
+    font-size: 14px;
+    font-style: italic;
+    font-weight: 400;
+    line-height: 19px;
+  }
+
+  // .opinion__item-date
+
+  &__item-date {
+    font-size: 14px;
+    font-weight: 800;
+    line-height: 19px;
+  }
+}
+//========================================================================================================================================================
+//peeck us
+.peeck__content {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 30px;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 75px;
+  @media (max-width: 1300px) {
+    padding: 75px 30px;
+  }
+}
+.peeck-item {
+  // .peeck-item__back
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+
+  &__back {
+    width: 76px;
+    height: 76px;
+    background: linear-gradient(278.32deg, #0b3f37 -7.03%, #cb8d62 136.33%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 1;
+    z-index: 10;
+  }
+
+  // .peeck-item__img
+
+  &__img {
+  }
+
+  // .peeck-item__title
+
+  &__title {
+    font-size: 20px;
+    font-weight: 800;
+    line-height: 19px;
+    padding-top: 10px;
+  }
+
+  // .peeck-item__text
+
+  &__text {
+    max-width: 310px;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 19px;
+  }
+
+  // .peeck-item__link
+
+  &__link {
+    font-size: 14px;
+    font-weight: 800;
+    line-height: 19px;
+    max-width: 129px;
+    background-clip: text;
+    -webkit-background-clip: text; /* Для підтримки Safari */
+    color: transparent; /* Текст стає прозорим */
+    background-image: linear-gradient(65.81deg, #5e3928 -24.09%, #e4a16f 104.02%);
+    z-index: 1000;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    transition: all 0.3s ease 0s;
+    &::after {
+      content: "";
+      display: block;
+      height: 8px;
+      width: 8px;
+      background-image: url("../../img/peeck us/down-chevron\ 2.svg");
+      transition: all 0.3s ease 0s;
+    }
+    &:hover {
+      opacity: 0.9;
+      &::after {
+        transform: rotate(180deg);
+      }
+    }
+  }
+}
