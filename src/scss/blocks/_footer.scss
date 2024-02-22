@@ -19,6 +19,10 @@
       gap: 70px;
       padding: 0 50px;
     }
+    @media (max-width: 450px) {
+      gap: 30px;
+      padding: 0 20px;
+    }
   }
 }
 
@@ -50,6 +54,11 @@
 .footer-links {
   display: flex;
   gap: 100px;
+  @media (max-width: 450px) {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+  }
 }
 .footer-nav {
   // .footer-nav__title
@@ -119,7 +128,9 @@
 }
 .footer-contacts {
   // .footer-contacts__title
-
+  @media (max-width: 450px) {
+    order: -1;
+  }
   &__title {
     font-size: 18px;
     font-weight: 800;

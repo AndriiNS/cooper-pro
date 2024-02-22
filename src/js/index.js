@@ -30,7 +30,7 @@ const swiper = new Swiper(".swiper", {
       slidesPerView: 3,
       slidesPerGroup: 3
     },
-    445: {
+    450: {
       slidesPerView: 2,
       slidesPerGroup: 2
     }
@@ -60,7 +60,7 @@ const swiperNewest = new Swiper(".swiper-newest", {
       slidesPerView: 3,
       slidesPerGroup: 3
     },
-    445: {
+    450: {
       slidesPerView: 2,
       slidesPerGroup: 2
     }
@@ -88,7 +88,7 @@ const swiperRecommended = new Swiper(".swiper-recomended", {
       slidesPerView: 3,
       slidesPerGroup: 3
     },
-    445: {
+    450: {
       slidesPerView: 2,
       slidesPerGroup: 2
     }
@@ -116,7 +116,7 @@ const swiperDiscount = new Swiper(".swiper-discount", {
       slidesPerView: 3,
       slidesPerGroup: 3
     },
-    445: {
+    450: {
       slidesPerView: 2,
       slidesPerGroup: 2
     }
@@ -144,7 +144,7 @@ const swiperOpinion = new Swiper(".swiper-opinion", {
       slidesPerView: 3,
       slidesPerGroup: 3
     },
-    445: {
+    450: {
       slidesPerView: 2,
       slidesPerGroup: 2,
       spaceBetween: 20
