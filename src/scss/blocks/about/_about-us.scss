@@ -1,0 +1,179 @@
+.bread-crumbles__inner {
+  max-width: 1920px;
+  background-color: rgba(11, 63, 55, 0.049);
+  margin: 0 auto;
+}
+.bread-crumbles {
+  max-width: 1920px;
+  padding-top: 39px;
+  padding-bottom: 50px;
+  @media (max-width: 1241px) {
+    padding-bottom: 50px;
+  }
+}
+.link-homepage {
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 17px;
+  color: #031412;
+}
+.link-current-page {
+  font-size: 18px;
+  font-weight: 800;
+  line-height: 17px;
+  color: #031412;
+}
+//========================================================================================================================================================
+.about {
+  // .about__inner
+
+  &__inner {
+    max-width: 1920px;
+    background-color: rgba(11, 63, 55, 0.049);
+    margin: 0 auto;
+  }
+  &__content {
+    display: flex;
+    gap: 180px;
+    align-items: center;
+    @media (max-width: 1241px) {
+      align-items: start;
+      padding-left: 50px;
+    }
+    @media (max-width: 770px) {
+      flex-direction: column;
+      gap: 0;
+    }
+    @media (max-width: 500px) {
+      padding-left: 10px;
+    }
+  }
+
+  // .about__info
+
+  &__info {
+  }
+
+  // .about__info-title
+
+  &__info-title {
+    font-family: var(--font-accent);
+    font-size: 100px;
+    font-weight: 400;
+    line-height: 75px;
+    padding-bottom: 50px;
+    margin-bottom: 50px;
+    position: relative;
+    &::after {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 623px;
+      background: #031412;
+      height: 1px;
+    }
+    @media (max-width: 1241px) {
+      font-size: 60px;
+      line-height: 45px;
+      &::after {
+        width: 80%;
+      }
+    }
+  }
+
+  // .about__info-text
+
+  &__info-text {
+    background-clip: text;
+    -webkit-background-clip: text; /* Для підтримки Safari */
+    color: transparent; /* Текст стає прозорим */
+    background-image: linear-gradient(65.81deg, #5e3928 -24.09%, #e4a16f 104.02%);
+    font-size: 50px;
+    font-style: italic;
+    font-weight: 600;
+    line-height: 48px;
+    position: relative;
+    max-width: 533px;
+    padding: 0 30px;
+    &::after {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      right: -30px;
+      width: 34px;
+      height: 34px;
+      background-image: url("./../img/page-about/quote.svg");
+    }
+    &::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: -30px;
+      width: 34px;
+      height: 34px;
+      background-image: url("./../img/page-about/quote.svg");
+    }
+    @media (max-width: 1241px) {
+      max-width: 440px;
+      margin-left: 50px;
+      font-size: 30px;
+      line-height: 32px;
+
+      &::after {
+        right: 0;
+      }
+    }
+    @media (max-width: 375px) {
+      margin-left: 10px;
+    }
+  }
+
+  // .about__info-box
+
+  &__info-box {
+    display: flex;
+    margin-top: 35px;
+    @media (max-width: 1241px) {
+      margin-top: 80px;
+    }
+  }
+
+  // .about__info-name
+
+  &__info-name {
+    font-size: 30px;
+    font-weight: 900;
+    line-height: 29px;
+    background-clip: text;
+    -webkit-background-clip: text; /* Для підтримки Safari */
+    color: transparent; /* Текст стає прозорим */
+    background-image: linear-gradient(65.81deg, #5e3928 -24.09%, #e4a16f 104.02%);
+    max-width: 165px;
+    @media (max-width: 770px) {
+      font-size: 18px;
+      line-height: 17px;
+      max-width: 100px;
+    }
+  }
+
+  // .about__info-sign
+
+  // &__info-sign {
+  // }
+
+  // // .about__img
+
+  &__img {
+    width: 404.23px;
+    height: 397.61px;
+    right: 0;
+    @media (max-width: 770px) {
+      align-self: flex-end;
+    }
+    @media (max-width: 450px) {
+      width: 289.53px;
+      height: 284.79px;
+    }
+  }
+}

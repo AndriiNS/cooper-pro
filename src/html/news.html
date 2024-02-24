@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>COOPER</title>
+    <link rel="stylesheet" href="./css/main.css" />
+    <link rel="stylesheet" href="./fonts/Mont/stylesheet.css" />
+    <link rel="stylesheet" href="./fonts/Lighthaus/stylesheet.css" />
+  </head>
+  <body>
+    @@include('blocks/header-menu.html')
+    <main class="main">
+      <div class="bread-crumbles__inner">
+        <div class="container">
+          <div class="bread-crumbles">
+            <a href="./index.html" class="link-homepage">Головна /</a>
+            <a href="#" class="link-current-page">Новини</a>
+          </div>
+        </div>
+      </div>
+      @@include('blocks/news-page/main-news.html')
+    </main>
+    @@include('blocks/footer.html')
+    <script src="./js/index.bundle.js"></script>
+  </body>
+</html>

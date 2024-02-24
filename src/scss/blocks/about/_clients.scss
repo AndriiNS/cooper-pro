@@ -1,0 +1,103 @@
+.clients {
+  // .clients__content
+
+  &__content {
+    display: flex;
+    gap: 152px;
+    padding: 140px 0;
+    @media (max-width: 1241px) {
+      flex-direction: column;
+      align-items: center;
+      gap: 90px;
+    }
+    @media (max-width: 530px) {
+      gap: 50px;
+      padding-bottom: 23px;
+      padding-top: 50px;
+    }
+  }
+
+  // .clients__info
+
+  &__info {
+    display: flex;
+    flex-direction: column;
+    gap: 23px;
+    max-width: 517px;
+  }
+
+  // .clients__info-title
+
+  &__info-title {
+    font-family: var(--font-accent);
+    font-size: 50px;
+    font-weight: 400;
+    line-height: 53px;
+    @media (max-width: 1241px) {
+      text-align: center;
+    }
+  }
+
+  // .clients__info-text
+
+  &__info-text {
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 25px;
+    @media (max-width: 1241px) {
+      text-align: center;
+    }
+  }
+
+  // .clients__counter
+
+  &__counter {
+  }
+
+  // .clients__counter-title
+
+  &__counter-title {
+    font-size: 50px;
+    font-weight: 900;
+    line-height: 48px;
+    background-clip: text;
+    -webkit-background-clip: text; /* Для підтримки Safari */
+    color: transparent; /* Текст стає прозорим */
+    background-image: linear-gradient(65.81deg, #5e3928 -24.09%, #e4a16f 104.02%);
+    @media (max-width: 1241px) {
+      text-align: center;
+    }
+    @media (max-width: 530px) {
+      font-size: 18px;
+      line-height: 17px;
+      padding-bottom: 12px;
+    }
+  }
+
+  // .clients__counter-number
+
+  &__counter-number {
+    font-size: 250px;
+    font-weight: 800;
+    line-height: 241px;
+    background-image: url("./../img/page-about/for-numbers.png");
+    background-position: bottom;
+    background-size: cover;
+    -webkit-background-clip: text; /* Для вебкіт браузерів */
+    color: transparent;
+    @media (max-width: 1300px) {
+      align-self: center;
+      font-size: 200px;
+    }
+    @media (max-width: 700px) {
+      font-size: 100px;
+      font-weight: 800;
+      line-height: 96px;
+      text-align: center;
+      display: flex;
+      justify-content: center;
+    }
+  }
+}
+.container {
+}
