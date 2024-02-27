@@ -173,3 +173,86 @@ const swiperHeader = new Swiper(".swiper-header", {
   }
 });
 //========================================================================================================================================================
+$(document).ready(function () {
+  let currentPage = 1;
+  const buttonsToShowLarge = 5;
+  const buttonsToShowSmall = 4;
+
+  function changePage(offset) {
+    currentPage += offset;
+    showPage(currentPage);
+  }
+
+  function showPage(pageNumber) {
+    const pages = $(".news__content");
+    const pageButtonsContainer = $(".news-nav__inner");
+    const totalButtons = window.innerWidth < 375 ? buttonsToShowSmall : buttonsToShowLarge;
+
+    if (pageNumber < 1) {
+      currentPage = 1;
+    } else if (pageNumber > pages.length) {
+      currentPage = pages.length;
+    } else {
+      currentPage = pageNumber;
+    }
+
+    pages.filter(":visible").fadeOut(300, function () {
+      pages.eq(currentPage - 1).fadeIn(300);
+    });
+
+    pageButtonsContainer.empty();
+
+    let startIndex = Math.max(1, currentPage - Math.floor(totalButtons / 2));
+
+    if (startIndex + totalButtons > pages.length) {
+      startIndex = Math.max(1, pages.length - totalButtons + 1);
+    }
+
+    const arrowLeft = $("<button>", {
+      class: "news__btn arrow-left",
+      html: '<img src="./img/news-page/arrow-left.svg" alt="prev" />'
+    });
+
+    arrowLeft.appendTo(pageButtonsContainer);
+
+    for (let i = 0; i < totalButtons; i++) {
+      const button = $("<button>", {
+        class: "news__btn page-btn",
+        "data-page": startIndex + i,
+        text: startIndex + i
+      });
+
+      if (startIndex + i === currentPage) {
+        button.addClass("active");
+      }
+
+      button.appendTo(pageButtonsContainer);
+    }
+
+    const arrowRight = $("<button>", {
+      class: "news__btn arrow-right",
+      html: '<img src="./img/news-page/arrow-right.svg" alt="next" />'
+    });
+
+    arrowRight.appendTo(pageButtonsContainer);
+  }
+
+  showPage(currentPage);
+
+  $(".news-nav__inner").on("click", ".page-btn", function () {
+    const page = parseInt($(this).data("page"));
+
+    $(".page-btn").removeClass("active");
+    $(this).addClass("active");
+
+    changePage(page - currentPage);
+  });
+
+  $(".news-nav__inner").on("click", ".arrow-left", function () {
+    changePage(-1);
+  });
+
+  $(".news-nav__inner").on("click", ".arrow-right", function () {
+    changePage(1);
+  });
+});

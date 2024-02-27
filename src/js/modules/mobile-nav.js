@@ -14,11 +14,21 @@ function mobileNav() {
   // Add click event to nav links
   const navLinks = document.querySelectorAll(".mobile-nav__list a");
   navLinks.forEach((link) => {
-    link.addEventListener("click", function () {
+    link.addEventListener("click", function (event) {
       // Close mobile nav after clicking a link
       nav.classList.remove("mobile-nav--open");
       menuIcon.classList.remove("nav-icon--active");
       document.body.classList.remove("no-scroll");
+
+      // Check if the clicked link has the contact-link class
+      if (event.target.classList.contains("contact-link")) {
+        // Prevent the default link behavior and scroll to the bottom
+        event.preventDefault();
+        window.scrollTo({
+          top: document.body.scrollHeight,
+          behavior: "smooth"
+        });
+      }
     });
   });
 }
