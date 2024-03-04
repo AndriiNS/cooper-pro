@@ -265,17 +265,17 @@ $(function () {
     var isHeartActive = localStorage.getItem("isHeartActive_" + index) === "true";
 
     if (isHeartActive) {
-      heartIcon.css("background-image", 'url("./../img/products/active-heart.svg")');
+      heartIcon.css("background-image", 'url("./img/products/active-heart.svg")');
     }
 
     heartBtn.click(function () {
       isHeartActive = !isHeartActive;
 
       if (isHeartActive) {
-        heartIcon.css("background-image", 'url("./../img/products/active-heart.svg")');
+        heartIcon.css("background-image", 'url("./img/products/active-heart.svg")');
         displayNotification("Додано в обране", index);
       } else {
-        heartIcon.css("background-image", 'url("./../img/products/black-heart.svg")');
+        heartIcon.css("background-image", 'url("./img/products/black-heart.svg")');
         displayNotification("Видалено з обраного", index);
       }
 
