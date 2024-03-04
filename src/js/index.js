@@ -256,3 +256,42 @@ $(document).ready(function () {
     changePage(1);
   });
 });
+//========================================================================================================================================================
+$(function () {
+  $(".heart-btn").each(function () {
+    var heartBtn = $(this);
+    var heartIcon = heartBtn.find(".heart-icon");
+    var index = $(".heart-btn").index(heartBtn);
+    var isHeartActive = localStorage.getItem("isHeartActive_" + index) === "true";
+
+    if (isHeartActive) {
+      heartIcon.css("background-image", 'url("./../img/products/active-heart.svg")');
+    }
+
+    heartBtn.click(function () {
+      isHeartActive = !isHeartActive;
+
+      if (isHeartActive) {
+        heartIcon.css("background-image", 'url("./../img/products/active-heart.svg")');
+        displayNotification("Додано в обране", index);
+      } else {
+        heartIcon.css("background-image", 'url("./../img/products/black-heart.svg")');
+        displayNotification("Видалено з обраного", index);
+      }
+
+      localStorage.setItem("isHeartActive_" + index, isHeartActive.toString());
+    });
+  });
+});
+
+function displayNotification(message, index) {
+  var notificationContainer = $("<div>").addClass("notification-container");
+  var notificationMessage = $("<div>").addClass("notification-message").text(message);
+
+  notificationContainer.append(notificationMessage);
+  $("body").append(notificationContainer);
+
+  setTimeout(function () {
+    notificationContainer.remove();
+  }, 2000);
+}
